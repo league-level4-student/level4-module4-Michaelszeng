@@ -36,34 +36,34 @@ public class Runner {
 		animal.speak(); //prints "I am an animal"
 		
 		//animal can also point to a Dog object since Dog extends Animal
-		animal = new Dog(); 
-		animal.speak(); //prints "Woof!"
+		Animal animal1 = new Dog(); 
+		animal1.speak(); //prints "Woof!"
 		
 		//animal can also point to a Bird object since Bird extends Animal
-		animal = new Bird();
-		animal.speak(); //prints "Tweet!"
+		animal1 = new Bird();
+		animal1.speak(); //prints "Tweet!"
 		
 		//animal can also point to a Fish object since Fish extends Animal
-		animal = new Fish();
-		animal.speak(); //prints "Gurgle Gurgle Gurgle!"
+		animal1 = new Fish();
+		animal1.speak(); //prints "Gurgle Gurgle Gurgle!"
 		
 		/*CASTING*/
 		//casting is when a reference type is temporarily changed into another reference type.
 		System.out.println("\nCASTING");
 		
 		//animal points to a Dog object
-		animal = new Dog();
+		animal1 = new Dog();
 		//Since animal is a reference of Animal, it must be cast to Dog in order to
 		//be assigned as a Dog object.
-		Dog d = (Dog)animal;
+		Dog d = (Dog)animal1;
 		d.speak(); //prints "Woof!"
 		
-		animal = new Bird();
-		Bird b = (Bird)animal;
+		animal1 = new Bird();
+		Bird b = (Bird)animal1;
 		b.speak(); //prints "Tweet!"
 		
-		animal = new Fish();
-		Fish f = (Fish)animal;
+		animal1 = new Fish();
+		Fish f = (Fish)animal1;
 		f.speak(); //prints "Gurgle Gurgle Gurgle"
 		
 	}
