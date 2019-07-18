@@ -17,7 +17,7 @@ public abstract class Polymorph {
    	 
     }
     
-    public abstract void draw(Graphics g, int x, int y);
+    public abstract void draw(Graphics g, int x, int y, boolean clicked, boolean clicked2);
     
     public int getX() {
     	return x;
